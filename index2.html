@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Mage - Realm of the Demon Kings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1 class="page-title">Create Your Mage</h1>
+            <p class="page-subtitle">Shape your destiny in the realm</p>
+        </header>
+
+        <main class="creation-container">
+            <div class="creation-card">
+                <!-- Character Name Section -->
+                <div class="section">
+                    <h3 class="section-title">Your Name</h3>
+                    <input type="text" class="name-input" placeholder="Enter your mage name..." maxlength="20">
+                </div>
+
+                <!-- Element Selection -->
+                <div class="section">
+                    <h3 class="section-title">Choose Your Element</h3>
+                    <div class="element-grid">
+                        <div class="element-option fire">
+                            <div class="element-icon">🔥</div>
+                            <h4>Fire</h4>
+                            <p>Destructive power and passion</p>
+                        </div>
+                        <div class="element-option earth">
+                            <div class="element-icon">🌍</div>
+                            <h4>Earth</h4>
+                            <p>Strength and endurance</p>
+                        </div>
+                        <div class="element-option water">
+                            <div class="element-icon">💧</div>
+                            <h4>Water</h4>
+                            <p>Healing and adaptability</p>
+                        </div>
+                        <div class="element-option air">
+                            <div class="element-icon">💨</div>
+                            <h4>Air</h4>
+                            <p>Speed and wisdom</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Character Appearance -->
+                <div class="section">
+                    <h3 class="section-title">Appearance</h3>
+                    <div class="appearance-options">
+                        <div class="appearance-group">
+                            <label>Hair Color:</label>
+                            <div class="color-options">
+                                <div class="color-choice brown"></div>
+                                <div class="color-choice black"></div>
+                                <div class="color-choice blonde"></div>
+                                <div class="color-choice red"></div>
+                                <div class="color-choice silver"></div>
+                            </div>
+                        </div>
+                        <div class="appearance-group">
+                            <label>Robe Color:</label>
+                            <div class="color-options">
+                                <div class="color-choice robe-blue"></div>
+                                <div class="color-choice robe-purple"></div>
+                                <div class="color-choice robe-green"></div>
+                                <div class="color-choice robe-red"></div>
+                                <div class="color-choice robe-gold"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="section">
+                    <h3 class="section-title">Attributes <span class="points-remaining">Points Remaining: 15</span></h3>
+                    <div class="stats-grid">
+                        <div class="stat-row">
+                            <label>Magic Power:</label>
+                            <div class="stat-controls">
+                                <button class="stat-btn minus">-</button>
+                                <span class="stat-value">5</span>
+                                <button class="stat-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <label>Health:</label>
+                            <div class="stat-controls">
+                                <button class="stat-btn minus">-</button>
+                                <span class="stat-value">5</span>
+                                <button class="stat-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <label>Mana:</label>
+                            <div class="stat-controls">
+                                <button class="stat-btn minus">-</button>
+                                <span class="stat-value">5</span>
+                                <button class="stat-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <label>Wisdom:</label>
+                            <div class="stat-controls">
+                                <button class="stat-btn minus">-</button>
+                                <span class="stat-value">5</span>
+                                <button class="stat-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn secondary">Back to Menu</button>
+                    <button class="action-btn primary">Begin Adventure</button>
+                </div>
+            </div>
+
+            <!-- Character Preview -->
+            <div class="preview-card">
+                <h3>Your Mage</h3>
+                <div class="character-preview">
+                    <div class="preview-avatar">🧙‍♂️</div>
+                    <div class="preview-info">
+                        <p><strong>Name:</strong> <span class="preview-name">Unnamed Mage</span></p>
+                        <p><strong>Element:</strong> <span class="preview-element">None Selected</span></p>
+                        <div class="preview-stats">
+                            <div>Magic: <span>5</span></div>
+                            <div>Health: <span>5</span></div>
+                            <div>Mana: <span>5</span></div>
+                            <div>Wisdom: <span>5</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
