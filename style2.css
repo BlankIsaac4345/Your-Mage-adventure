@@ -163,7 +163,6 @@ body {
     font-style: italic;
 }
 
-/* Appearance Options */
 .appearance-options {
     display: flex;
     flex-direction: column;
@@ -206,21 +205,18 @@ body {
     box-shadow: 0 0 8px rgba(218, 165, 32, 0.5);
 }
 
-/* Hair Colors */
 .brown { background: #8B4513; }
 .black { background: #2F2F2F; }
 .blonde { background: #DAA520; }
 .red { background: #B22222; }
 .silver { background: #C0C0C0; }
 
-/* Robe Colors */
 .robe-blue { background: #4169E1; }
 .robe-purple { background: #8A2BE2; }
 .robe-green { background: #228B22; }
 .robe-red { background: #DC143C; }
 .robe-gold { background: #FFD700; }
 
-/* Stats */
 .stats-grid {
     display: flex;
     flex-direction: column;
@@ -271,7 +267,6 @@ body {
     text-align: center;
 }
 
-/* Action Buttons */
 .action-buttons {
     display: flex;
     gap: 15px;
@@ -290,254 +285,5 @@ body {
     transition: all 0.3s ease;
     text-shadow: 1px 1px 2px rgba(0, 0, 0,)
 
-    .element-option {
-    padding: 20px;
-    border: 2px solid #8B4513;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.1);
-    position: relative;
-}
-
-.element-option:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-color: #DAA520;
-}
-
-.element-option.selected {
-    border-color: #DAA520;
-    background: linear-gradient(145deg, rgba(218, 165, 32, 0.3), rgba(218, 165, 32, 0.1));
-    box-shadow: 
-        0 0 15px rgba(218, 165, 32, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
-
-.element-option.selected::before {
-    content: '✓';
-    position: absolute;
-    top: 5px;
-    right: 8px;
-    background: #DAA520;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-/* Color Choice Highlighting */
-.color-choice {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #8B4513;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.color-choice:hover {
-    transform: scale(1.15);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-    border-color: #DAA520;
-}
-
-.color-choice.selected {
-    border-color: #DAA520;
-    border-width: 3px;
-    box-shadow: 
-        0 0 12px rgba(218, 165, 32, 0.6),
-        inset 0 2px 4px rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
-}
-
-.color-choice.selected::after {
-    content: '✓';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-/* Name Input Enhanced Focus */
-.name-input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 2px solid #8B4513;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.9);
-    font-family: 'Crimson Text', serif;
-    font-size: 1.1rem;
-    color: #3A2317;
-    transition: all 0.3s ease;
-}
-
-.name-input:focus {
-    outline: none;
-    border-color: #DAA520;
-    box-shadow: 
-        0 0 8px rgba(218, 165, 32, 0.5),
-        inset 0 2px 4px rgba(218, 165, 32, 0.1);
-    background: rgba(255, 255, 255, 1);
-    transform: translateY(-1px);
-}
-
-.name-input.has-content {
-    border-color: #228B22;
-    background: rgba(240, 255, 240, 0.9);
-    box-shadow: 0 0 5px rgba(34, 139, 34, 0.3);
-}
-
-/* Stat Button Enhanced States */
-.stat-btn {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #8B4513;
-    border-radius: 50%;
-    background: #DEB887;
-    color: #654321;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.stat-btn:hover {
-    background: #DAA520;
-    transform: scale(1.15);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-    border-color: #B8860B;
-}
-
-.stat-btn:active {
-    transform: scale(1.05);
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Stat Value Highlighting When Changed */
-.stat-value.changed {
-    color: #DAA520;
-    font-size: 1.1em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-/* Action Button Enhanced States */
-.action-btn {
-    flex: 1;
-    font-family: 'Cinzel', serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 12px 25px;
-    border: 2px solid #8B4513;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(145deg, #DEB887 0%, #D2B48C 100%);
-    color: #654321;
-}
-
-.action-btn:hover {
-    background: linear-gradient(145deg, #F0E68C 0%, #DEB887 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.action-btn.primary {
-    background: linear-gradient(145deg, #DAA520 0%, #B8860B 100%);
-    color: #2F1B14;
-    border-color: #B8860B;
-    font-weight: 700;
-}
-
-.action-btn.primary:hover {
-    background: linear-gradient(145deg, #FFD700 0%, #DAA520 100%);
-}
-
-/* Preview Card Enhancement */
-.preview-card {
-    position: sticky;
-    top: 20px;
-}
-
-.preview-card h3 {
-    font-family: 'Cinzel', serif;
-    font-size: 1.4rem;
-    color: #8B0000;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
-}
-
-.character-preview {
-    text-align: center;
-}
-
-.preview-avatar {
-    font-size: 4rem;
-    margin-bottom: 15px;
-    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
-}
-
-.preview-info {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    border: 1px solid rgba(139, 69, 19, 0.3);
-}
-
-.preview-info p {
-    margin-bottom: 8px;
-    color: #654321;
-}
-
-.preview-name, .preview-element {
-    color: #DAA520;
-    font-weight: bold;
-}
-
-.preview-stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 10px;
-    font-size: 0.9rem;
-}
-
-.preview-stats div {
-    background: rgba(139, 69, 19, 0.1);
-    padding: 5px 8px;
-    border-radius: 5px;
-    color: #654321;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .creation-container {
-        grid-template-columns: 1fr;
-    }
     
-    .element-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .appearance-group {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-}
     
